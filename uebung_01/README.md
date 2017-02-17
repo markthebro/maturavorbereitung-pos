@@ -7,7 +7,7 @@ Es soll eine Schule, die mehrere Klassen hat, verwaltet werden. Eine Klasse hat 
 
 ##  Klassendiagramm
 Das Klassendiagramm in UML sieht wie folgt aus:
-![UML Klassendiagramm](https://github.com/schletz/fachtheorie_1617/blob/master/uebung1/SchulVwKlassendiagramm3.png)
+![UML Klassendiagramm](https://github.com/markthebro/maturavorbereitung-pos/blob/master/uebung_01/SchulVwKlassendiagramm3.png)
 
 Implementiere nun die Methoden und Properties so, dass sie den oben genannten Prinzipien entsprechen. Dabei soll das Property *Klasse* des Schülers auch beschreibbar sein. Allerdings darf durch das Setzen des Properties die Regel mit der Klassenhöchstzahl nicht verletzt werden.
 
