@@ -1,6 +1,6 @@
 ﻿# Maturavorbereitung POS 5CHIF (2016/2017)
 ## Unterrichtende Lehrer
-* Michael Schletz aka SZ (Freitags von 09:50 Uhr - 11:35 Uhr)
+* Michael Schletz aka SZ (Freitags von 09:55 Uhr - 11:35 Uhr)
 * Stefan Robert aka STE (Freitags von 08:00 Uhr - 08:50 Uhr)
 
 ## Übung 01 - Properties mit SZ am 17. Februar 2017
