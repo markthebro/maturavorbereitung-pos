@@ -7,3 +7,7 @@
 Erstellen eines Konsolenprogrammes mit Hilfe einer Class Library um den Einstieg in die Properties darzustellen bzw. zu erleichtern (Auffrischen der C# Grundlagen). Zusätzlich die ersten Versuche bzw. Vergleiche zwischen einer foreach "Abfrage" und einer (professionellen) LINQ-Abfrage.
 Vergleiche Codezeile `public Schueler FindSchuelerById(int id)` in `SchulVw.Model/Klasse.cs`
 Original Repo: [schletz/fachtheorie_1617/uebung1](https://github.com/schletz/fachtheorie_1617/tree/master/uebung1)
+
+## Übung 01 - Properties mit SZ am 24. Februar 2017
+Weitere Einführung und Erklärung in die Properties sowie Erklärung wie Navigation Properties funktionieren, wie mit Fehlerbehandlung umgegangen wird sowie erstellen der ersten Unit Tests.
+Original Repo: [schletz/fachtheorie_1617/uebung1](https://github.com/schletz/fachtheorie_1617/tree/master/uebung1)

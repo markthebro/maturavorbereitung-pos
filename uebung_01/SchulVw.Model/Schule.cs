@@ -90,7 +90,7 @@ namespace SchulVw.Model
             return null;
         }
 
-        /// <summary>
+        /*/// <summary>
         /// Erstellt eine neue Klasse in der Schule
         /// </summary>
         /// <param name="k">Klasse als fertiges Objekt</param>
@@ -99,14 +99,36 @@ namespace SchulVw.Model
             //vgl. mit Codezeile  public void AddSchueler(Schueler s) in Klasse.cs für weitere Fehlerüberprüfungen
             if (k != null)
             {
-                Klassen.Add(k.Name, k);
+                try
+                {
+                    Klassen.Add(k.Name, k);
+                    k.Schule = this;
+                } catch { }
 
                 //vgl. mit Diagramm --> NICHT VERGESSEN!!! --> Referenzen (Rückreferenz null, Klasse ohne Schule)!!!
-                k.Schule = this;
+                
 
                 //Debugging only (zum Testen für etwas)!! --> bzw. mit F10 kann ich Schritt für Schritt weiter gehen.
                 //k.Name = "4CHIF"; 
             }
+        }*/
+
+        public bool AddKlasse(Klasse k)
+        {
+            if (k != null)
+            {
+                try
+                {
+                    Klassen.Add(k.Name, k);
+                    k.Schule = this;
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+            }
+            return false;
         }
     }
 }

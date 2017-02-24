@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchulVw.App", "SchulVw.App\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchulVw.Model", "SchulVw.Model\SchulVw.Model.csproj", "{20CEDE8E-FA98-4945-A81F-5422892D27F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchulVw.Test", "SchulVw.Test\SchulVw.Test.csproj", "{62D91E8C-089E-4689-85BD-B687DB81561A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{20CEDE8E-FA98-4945-A81F-5422892D27F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20CEDE8E-FA98-4945-A81F-5422892D27F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20CEDE8E-FA98-4945-A81F-5422892D27F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D91E8C-089E-4689-85BD-B687DB81561A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D91E8C-089E-4689-85BD-B687DB81561A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D91E8C-089E-4689-85BD-B687DB81561A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D91E8C-089E-4689-85BD-B687DB81561A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

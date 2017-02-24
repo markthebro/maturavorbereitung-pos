@@ -30,7 +30,7 @@ namespace SchulVw.Model
             return null;
         }
 
-        /// <summary>
+        /*/// <summary>
         /// Fügt der Klasse einen neuen Schüler hinzu
         /// </summary>
         /// <param name="s">Schüler als fertiges Objekt</param>
@@ -38,16 +38,44 @@ namespace SchulVw.Model
         {
             if(s != null)
             {
-                Schueler.Add(s);
+                if (Schueler.Count < 5)
+                {
+                    Schueler.Add(s);
 
-                //vgl. mit Diagramm --> NICHT VERGESSEN!!! --> Referenzen (Rückreferenz null, Schüler ohne Klasse)!!!
-                s.Klasse = this; 
+                    //"Prüft" ob es dem Schüler gibt und löscht ihn dann, mit ? wird das klassiche != null überprüft
+                    s.Klasse?.Schueler.Remove(s);
+
+                    //vgl. mit Diagramm --> NICHT VERGESSEN!!! --> Referenzen (Rückreferenz null, Schüler ohne Klasse)!!!
+                    s.Klasse = this;
+                }
+
             }
 
             /*
                 oder:
                 if(s == null) { return; } //geht auch am Anfang vom Code, beispielsweise 3-4 Fehler prüfen und dann den logischen Code
             */
+        //}
+
+
+        //Auf boolean setzen für UnitTests
+        public bool AddSchueler(Schueler s)
+        {
+            if(s == null) { return false; }
+
+            if(s.Klasse == null && Schule.FindSchuelerById(s.Id) != null)
+            {
+                return false;
+            }
+
+            if (Schueler.Count < 5)
+            {
+                Schueler.Add(s);
+                s.Klasse?.Schueler.Remove(s);
+                s.Klasse = this;
+                return true;
+            }
+            return false;
         }
     }
 }

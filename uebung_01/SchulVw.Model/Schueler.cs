@@ -26,7 +26,24 @@
                 return Nachname + " " + Vorname;
             }
         }
-        public Klasse Klasse { get; set; }
+
+        //private Klasse klasse;
+        public Klasse Klasse
+        {          get; set;
+            /*get
+            {
+                return klasse;
+            }
+            set
+            {
+                //Wenn du von einer fremden Klasse kommst, füge den Schüler hinzu und setze die Klase
+                if(value != klasse)
+                {
+                    value.AddSchueler(this);
+                    klasse = value;
+                }
+            }*/
+        }
 
 
     }
