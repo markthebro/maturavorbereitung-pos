@@ -37,7 +37,7 @@ Original Repo: [schletz/fachtheorie_1617/uebung1](https://github.com/schletz/fac
 ### Hinweis
 Das ist nicht die schönste Methode, nur zum Herzeigen, wie erstelle ich die grundlegnden Klassen und Solutions. Wir schließen die DB nie...
 
-## Übung 02 - Interfaces / LINQ Übungen am 03. März 2017
+## Übung 02 - Interfaces / LINQ Übungen mit SZ am 03. März 2017
 IEnumerable.....................MoveNext / read only (wie foreach) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---ICollection..............Add (Nicht nur lesen, auch hinzufügen) <br />
@@ -55,7 +55,7 @@ bool filter(Schueler s)
 }
 ```<br /><br />
 Geschweifte Klammer, wenn ich mehr als nur eine Anweisung übergebe, muss mich dann aber um das Ergebnis ebenfalls kümmern: <br />
-```
+
 (s) => 
 { 
 	return s.Id == 2; 
