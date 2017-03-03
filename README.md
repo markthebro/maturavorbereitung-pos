@@ -25,6 +25,7 @@ Original Repo: [schletz/fachtheorie_1617/uebung1](https://github.com/schletz/fac
 
 ## Übung 02 - Erstellen des EDMX (ADO.NET Entity Data Model) mit STE am 03. März 2017
 Erzeugen eines neues Visual Studios Projekts. SQL Code ausführen (`View` --> `SQL Server Object Explorer` --> `Add Server` --> `(localdb)\MSSQLLocalDB` --> `Databases` --> `Right Cliack` --> `Add Database` --> `FahrtenbuchDB` --> `New Query` --> `Run Fahrtenbuch.sql`)
+
 Erstellen einer neuer Class Library, in dieser eine EDMX Datei erstellen (`Add` --> `New Item` --> `Data` --> `ADO.NET Entity Data Model` --> `FahrtenbuchEntities` --> ``EF desinger from Database` --> `New Connection` --> `Microsoft SQL Server` --> `(localdb)\MSSQLServer` --> `FahrtenbuchDB` --> `dbo/Tables/*.*` --> `Pluralize` --> `Save in App.Config`)
 Danach bei `Solution` --> `Add new Item` --> `Test` --> `Unit Test Project` --> `FahrtenbuchTest` --> `Reference` --> `Projects/Solution/FahrtenbuchDB`
 Zusätzlich als Reference über `Manage NuGet Packages` das `EntityFramework v.6.1.3` installieren.
