@@ -1,0 +1,1 @@
+﻿![Entity-Relationship-Diagram](https://github.com/markthebro/maturavorbereitung-pos/blob/master/uebung_ste_01/Fahrtenbuch.png)
