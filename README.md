@@ -53,14 +53,16 @@ bool filter(Schueler s)
 { 
 	return s.Id == 2; 
 }
-```<br /><br />
+```
+<br /><br />
 Geschweifte Klammer, wenn ich mehr als nur eine Anweisung übergebe, muss mich dann aber um das Ergebnis ebenfalls kümmern: <br />
-
+```
 (s) => 
 { 
 	return s.Id == 2; 
 }
-``` <br /><br />
+```
+<br /><br />
 Eigenes .Any() programmieren (logisches ODER):
 ```
 public bool Any(Func<T, bool> filterFunc) { 
@@ -71,6 +73,7 @@ public bool Any(Func<T, bool> filterFunc) {
 	} 
 	return false; 
 }
-``` <br /><br />
+```
+<br /><br />
 Ein .All() ist ein logisches UND, aufpassen bei der Verwendung!! <br />
 Joins (result6 und result7) folgt nächste Woche! Original Repo: [schletz/fachtheorie_1617/uebung02](https://github.com/schletz/fachtheorie_1617/tree/master/uebung02)
