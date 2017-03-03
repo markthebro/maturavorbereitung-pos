@@ -48,10 +48,10 @@ Datenbanken liefern eine Collection, keine Listen!!<br />
 <br />
 `s => s.Id == 2;` <br />
 ist im Prinzip: <br />
-`bool filter(Schueler s) 
+`bool filter(Schueler s) <br />
 { 
 	return s.Id == 2; 
-}`<br />
+}`<br /><br />
 Geschweifte Klammer, wenn ich mehr als nur eine Anweisung übergebe, muss mich dann aber um das Ergebnis ebenfalls kümmern: <br />
 `(s) => 
 { 
