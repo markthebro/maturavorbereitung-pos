@@ -24,15 +24,15 @@ Weitere Einführung und Erklärung in die Properties sowie Erklärung wie Naviga
 Original Repo: [schletz/fachtheorie_1617/uebung1](https://github.com/schletz/fachtheorie_1617/tree/master/uebung1)
 
 ## Übung 02 - Erstellen des EDMX (ADO.NET Entity Data Model) mit STE am 03. März 2017
-Erzeugen eines neues Visual Studios Projekts. <br />
-SQL Code ausführen (`View` --> `SQL Server Object Explorer` --> `Add Server` --> `(localdb)\MSSQLLocalDB` --> `Databases` <br /> --> `Right Click` --> `Add Database` --> `FahrtenbuchDB` --> `New Query` --> `Run Fahrtenbuch.sql`) <br />
-Erstellen einer neuer Class Library, in dieser eine EDMX Datei erstellen (`Add` --> `New Item` --> `Data` --> <br /> `ADO.NET Entity Data Model` --> `FahrtenbuchEntities` --> `EF desinger from Database` --> `New Connection` --> `Microsoft SQL Server` --> `(localdb)\MSSQLServer` --> `FahrtenbuchDB` --> `dbo/Tables/*.*` --> `Pluralize` --> `Save in App.Config`) <br />
-Danach bei `Solution` --> `Add new Item` --> `Test` --> `Unit Test Project` --> `FahrtenbuchTest` --> `Reference` --> `Projects/Solution/FahrtenbuchDB`. <br />
-Zusätzlich als Reference über `Manage NuGet Packages` das `EntityFramework v.6.1.3` installieren. <br />
-Nicht vergessen LINQ einzubinden `.Count()` --> `using System.Linq` einbinden. <br />
-Über `Test` --> `Run` --> `All Tests` können die Tests aufgerufen werden. Resultat --> `Failed` <br />
-In `FahrtenbuchTest` in der `App.Config` den `ConnectionString` von der Class Library aus der `App.Config` reinladen. <br />
-Ein erneuter Test führt zum gewünschten Ergebnis.
+1.  Erzeugen eines neues Visual Studios Projekts. <br />
+2.  SQL Code ausführen (`View` --> `SQL Server Object Explorer` --> `Add Server` --> `(localdb)\MSSQLLocalDB` --> `Databases` <br /> --> `Right Click` --> `Add Database` --> `FahrtenbuchDB` --> `New Query` --> `Run Fahrtenbuch.sql`) <br />
+3.  Erstellen einer neuer Class Library, in dieser eine EDMX Datei erstellen (`Add` --> `New Item` --> `Data` --> <br /> `ADO.NET Entity Data Model` --> `FahrtenbuchEntities` --> `EF desinger from Database` --> `New Connection` --> `Microsoft SQL Server` --> `(localdb)\MSSQLServer` --> `FahrtenbuchDB` --> `dbo/Tables/*.*` --> `Pluralize` --> `Save in App.Config`) <br />
+4.  Danach bei `Solution` --> `Add new Item` --> `Test` --> `Unit Test Project` --> `FahrtenbuchTest` --> `Reference` --> `Projects/Solution/FahrtenbuchDB`. <br />
+5.  Zusätzlich als Reference über `Manage NuGet Packages` das `EntityFramework v.6.1.3` installieren. <br />
+6.  Nicht vergessen LINQ einzubinden `.Count()` --> `using System.Linq` einbinden. <br />
+7.  Über `Test` --> `Run` --> `All Tests` können die Tests aufgerufen werden. Resultat --> `Failed` <br />
+8.  In `FahrtenbuchTest` in der `App.Config` den `ConnectionString` von der Class Library aus der `App.Config` reinladen. <br />
+9.  Ein erneuter Test führt zum gewünschten Ergebnis.
 
 ### Hinweis
 Das ist nicht die schönste Methode, nur zum Herzeigen, wie erstelle ich die grundlegnden Klassen und Solutions. Wir schließen die DB nie...
