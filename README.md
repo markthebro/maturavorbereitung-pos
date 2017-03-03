@@ -36,3 +36,35 @@ Original Repo: [schletz/fachtheorie_1617/uebung1](https://github.com/schletz/fac
 
 ### Hinweis
 Das ist nicht die schönste Methode, nur zum Herzeigen, wie erstelle ich die grundlegnden Klassen und Solutions. Wir schließen die DB nie...
+
+## Übung 02 - Interfaces / LINQ Übungen am 03. März 2017
+IEnumerable.....................MoveNext / read only (wie foreach) <br />
+	| <br />
+	---ICollection..............Add (Nicht nur lesen, auch hinzufügen) <br />
+			| <br />
+			---IList............Indexer ([]) (Erlaubt einen wahllosen Zugriff) <br />
+<br />
+Datenbanken liefern eine Collection, keine Listen!!<br />
+<br />
+`s => s.Id == 2;` <br />
+ist im Prinzip: <br />
+`bool filter(Schueler s)
+{
+	return s.Id == 2;
+}`<br />
+Geschweifte Klammer, wenn ich mehr als nur eine Anweisung übergebe, muss mich dann aber um das Ergebnis ebenfalls kümmern: <br />
+`(s) =>
+{
+	return s.Id == 2;
+}` <br />
+Eigenes .Any() programmieren (logisches ODER): <br />
+`public bool Any(Func<T, bool> filterFunc) {
+	foreach(Pruefung p in pruefungen) {
+		if(filterFunc(p) == true) {
+			return true;
+		}
+	}
+	return false;
+}` <br />
+Ein .All() ist ein logisches UND, aufpassen bei der Verwendung!! <br />
+Joins (result6 und result7) folgt nächste Woche! Original Repo: [schletz/fachtheorie_1617/uebung02](https://github.com/schletz/fachtheorie_1617/tree/master/uebung02)

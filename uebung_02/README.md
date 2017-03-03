@@ -1,0 +1,1 @@
+#2. Übung: LINQ Statements (u.a. mit Fluid Syntax)
