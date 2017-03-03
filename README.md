@@ -48,23 +48,29 @@ Datenbanken liefern eine Collection, keine Listen!!<br />
 <br />
 `s => s.Id == 2;` <br />
 ist im Prinzip: <br />
-`bool filter(Schueler s) <br />
+```
+bool filter(Schueler s)
 { 
 	return s.Id == 2; 
-}`<br /><br />
+}
+```<br /><br />
 Geschweifte Klammer, wenn ich mehr als nur eine Anweisung übergebe, muss mich dann aber um das Ergebnis ebenfalls kümmern: <br />
-`(s) => 
+```
+(s) => 
 { 
 	return s.Id == 2; 
-}` <br />
-Eigenes .Any() programmieren (logisches ODER): <br />
-`public bool Any(Func<T, bool> filterFunc) { 
+}
+``` <br /><br />
+Eigenes .Any() programmieren (logisches ODER):
+```
+public bool Any(Func<T, bool> filterFunc) { 
 	foreach(Pruefung p in pruefungen) { 
 		if(filterFunc(p) == true) { 
 			return true; 
 		} 
 	} 
 	return false; 
-}` <br />
+}
+``` <br /><br />
 Ein .All() ist ein logisches UND, aufpassen bei der Verwendung!! <br />
 Joins (result6 und result7) folgt nächste Woche! Original Repo: [schletz/fachtheorie_1617/uebung02](https://github.com/schletz/fachtheorie_1617/tree/master/uebung02)
