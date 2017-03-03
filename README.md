@@ -54,7 +54,6 @@ bool filter(Schueler s)
 	return s.Id == 2; 
 }
 ```
-<br />
 Geschweifte Klammer, wenn ich mehr als nur eine Anweisung übergebe, muss mich dann aber um das Ergebnis ebenfalls kümmern: <br />
 ```
 (s) => 
@@ -62,7 +61,6 @@ Geschweifte Klammer, wenn ich mehr als nur eine Anweisung übergebe, muss mich d
 	return s.Id == 2; 
 }
 ```
-<br />
 Eigenes .Any() programmieren (logisches ODER):
 ```
 public bool Any(Func<T, bool> filterFunc) { 
